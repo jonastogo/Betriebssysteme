@@ -4,33 +4,33 @@ man:
 
 Sucht man Hilfe zur Funktion und den Optionen eines bestimmten Befehls oder Programms, 
 so kann man sich im Terminal [1] umfangreiche Hilfedateien anzeigen lassen: Die sogenannten Manpages. 
-"man" steht für Manual (Anleitung). Diese Anleitungen haben unter 
-Linux/Unix eine lange Tradition und werden ständig gepflegt.
+"man" steht fÃ¼r Manual (Anleitung). Diese Anleitungen haben unter 
+Linux/Unix eine lange Tradition und werden stÃ¤ndig gepflegt.
 
--k Schlüsselwort	zur Suche von Manual-Seiten mit einem bestimmten Schlüsselwort
--f Thema		Kurzinfo zum gewählten Thema
--t > ausgabe.ps		Erzeugt ein schön formatiertes Postscript-Dokument des Themas
+-k SchlÃ¼sselwort	zur Suche von Manual-Seiten mit einem bestimmten SchlÃ¼sselwort
+-f Thema		Kurzinfo zum gewÃ¤hlten Thema
+-t > ausgabe.ps		Erzeugt ein schÃ¶n formatiertes Postscript-Dokument des Themas
 
 
 pwd: 
 
 print working directory gibt das aktuelle Verzeichnis aus, in dem man sich befindet. 
 
--P	ein etwaiger symbolischer Link wird aufgelöst
--L	ein etwaiger symbolischer Link wird nicht aufgelöst, selbst wenn die Option "physical" in der Shell gesetzt ist
+-P	ein etwaiger symbolischer Link wird aufgelÃ¶st
+-L	ein etwaiger symbolischer Link wird nicht aufgelÃ¶st, selbst wenn die Option "physical" in der Shell gesetzt ist
 
 
 ls:
 
-ls steht für list und zeigt den Inhalt eines Verzeichnisses bzw. Ordners an. 
-Damit ist es einer der am häufigsten verwendeten Befehle auf der Kommandozeile.
+ls steht fÃ¼r list und zeigt den Inhalt eines Verzeichnisses bzw. Ordners an. 
+Damit ist es einer der am hÃ¤ufigsten verwendeten Befehle auf der Kommandozeile.
 
 -a oder --all			listet auch versteckte Dateien auf
 -l				Datei-Informationen in Langform ausgeben
--c				Datum der letzten Änderung
+-c				Datum der letzten Ã„nderung
 -C				Namen nebeneinander ausgeben (Standard)
 -d oder --directory		Verzeichnisse und keine Inhalte anzeigen
--h oder --human-readable	gibt in Kombination mit -l die Größe in einem für Menschen besser lesbaren Format aus
+-h oder --human-readable	gibt in Kombination mit -l die GrÃ¶ÃŸe in einem fÃ¼r Menschen besser lesbaren Format aus
 -i				Inode-Nummer vor Name ausgeben
 -m				Namen in einer Zeile ausgeben
 -R oder --recursive		Auch in Unterverzeichnisse absteigen
@@ -38,7 +38,7 @@ Damit ist es einer der am häufigsten verwendeten Befehle auf der Kommandozeile.
 
 cd:
 
-cd steht für change directory und dient - unter Berücksichtigung von Groß-/Kleinschreibung! - zum Wechsel in ein (Unter-)Verzeichnis. 
+cd steht fÃ¼r change directory und dient - unter BerÃ¼cksichtigung von GroÃŸ-/Kleinschreibung! - zum Wechsel in ein (Unter-)Verzeichnis. 
 cd ist ein eingebauter Befehl der Shell (zum Beispiel der Bash und der Dash).
 
 -L	cd folgt der logischen Verzeichnisstruktur (Standard)
@@ -47,52 +47,52 @@ cd ist ein eingebauter Befehl der Shell (zum Beispiel der Bash und der Dash).
 
 mkdir:
 
-mkdir steht für make directory und dient zum Anlegen von einem oder mehreren Verzeichnissen. 
+mkdir steht fÃ¼r make directory und dient zum Anlegen von einem oder mehreren Verzeichnissen. 
 
 -m oder --mode=MODUS	Zugriffsrechte setzen wie bei chmod
--p oder --parents	kein Fehler, wenn vorhanden; übergeordnete Verzeichnissen erzeugen, wenn notwendig
+-p oder --parents	kein Fehler, wenn vorhanden; Ã¼bergeordnete Verzeichnissen erzeugen, wenn notwendig
 -v oder --verbose	eine Meldung beim erstellen ausgeben
 
 
 rm:
 
-rm steht für remove und löscht Dateien oder auch komplette Verzeichnisse. 
-Dateien, die im Terminal mit dem Befehl rm gelöscht werden, landen nicht im Mülleimer bzw. Papierkorb!
+rm steht fÃ¼r remove und lÃ¶scht Dateien oder auch komplette Verzeichnisse. 
+Dateien, die im Terminal mit dem Befehl rm gelÃ¶scht werden, landen nicht im MÃ¼lleimer bzw. Papierkorb!
 
--i oder --interactive		vor dem Löschen eine Nachfrage "J/N" auslösen
---no-preserve-root		„/“ nicht besonders behandeln
---preserve-root			nicht rekursiv auf „/“ arbeiten
---one-file-system		beim rekursiven Entfernen einer Verzeichnishierarchie die Verzeichnisse überspringen, die sich auf einem anderen Gerät als der Parameter befinden
--v oder --verbose		durchgeführte Tätigkeiten erklären
+-i oder --interactive		vor dem LÃ¶schen eine Nachfrage "J/N" auslÃ¶sen
+--no-preserve-root		â€/â€œ nicht besonders behandeln
+--preserve-root			nicht rekursiv auf â€/â€œ arbeiten
+--one-file-system		beim rekursiven Entfernen einer Verzeichnishierarchie die Verzeichnisse Ã¼berspringen, die sich auf einem anderen GerÃ¤t als der Parameter befinden
+-v oder --verbose		durchgefÃ¼hrte TÃ¤tigkeiten erklÃ¤ren
 -r oder -R oder --recursive	Verzeichnisse und deren Inhalte rekursiv entfernen
--f oder --force			keine Nachfrage beim Löschen
+-f oder --force			keine Nachfrage beim LÃ¶schen
 
 
 cp:
 
-cp steht für copy und ist der Befehl zum Kopieren von Dateien und Verzeichnissen. 
+cp steht fÃ¼r copy und ist der Befehl zum Kopieren von Dateien und Verzeichnissen. 
 
 -a oder --archive					Beibehaltung von Besitzer-, Gruppen- und Zugriffsrechten und Erstellungs-, Modifikations- und Zugriffsdaten (entspricht -dR --preserve=all)
--b oder --backup					Sichert Dateien vor dem Überschreiben, wenn diese unterschiedlich sind
--d	erhält 						symbolische Links, folgt ihnen aber nicht beim Kopieren (entspricht -P --preserve=links)
--i oder --interactive					fragt vor Überschreiben nach
+-b oder --backup					Sichert Dateien vor dem Ãœberschreiben, wenn diese unterschiedlich sind
+-d	erhÃ¤lt 						symbolische Links, folgt ihnen aber nicht beim Kopieren (entspricht -P --preserve=links)
+-i oder --interactive					fragt vor Ãœberschreiben nach
 -l oder --link	kopiert 				nicht, sondern erstellt harten Link
--n oder --no-clobber					niemals vorhandene Dateien überschreiben (-i wird wirkungslos)
--p (klein) oder --preserve=mode,ownership,timestamps	erhält Standard-Dateiattribute wie Zeitpunkt des letzten Schreibzugriffs
--P (groß) oder --no-dereference				Symbolische Links als symbolische Links kopieren, statt den Links in der Quelle zu folgen
+-n oder --no-clobber					niemals vorhandene Dateien Ã¼berschreiben (-i wird wirkungslos)
+-p (klein) oder --preserve=mode,ownership,timestamps	erhÃ¤lt Standard-Dateiattribute wie Zeitpunkt des letzten Schreibzugriffs
+-P (groÃŸ) oder --no-dereference				Symbolische Links als symbolische Links kopieren, statt den Links in der Quelle zu folgen
 -r oder -R oder --recursive				Verzeichnisse rekursiv kopieren (Unterverzeichnisse eingeschlossen)
 -s oder --symbolic-link					kopiert nicht, sondern erstellt symbolischen Link
--u oder --update					kopiert nur, wenn Zieldatei älter als Quelldatei
--v oder --verbose					Durchgeführte Tätigkeiten "erklären" / anzeigen
+-u oder --update					kopiert nur, wenn Zieldatei Ã¤lter als Quelldatei
+-v oder --verbose					DurchgefÃ¼hrte TÃ¤tigkeiten "erklÃ¤ren" / anzeigen
 
 
 mv:
 
-mv steht für move und verschiebt eine Datei, wobei der Befehl teilweise auch zum Umbenennen verwendet wird. 
-Einfacher geht letzteres aber mit rename oder Programmen mit grafischer Oberfläche. 
+mv steht fÃ¼r move und verschiebt eine Datei, wobei der Befehl teilweise auch zum Umbenennen verwendet wird. 
+Einfacher geht letzteres aber mit rename oder Programmen mit grafischer OberflÃ¤che. 
 
--i oder --interactive	fragt vor dem Überschreiben nach
--u oder --update	verschiebt nur wenn Zieldatei älter
+-i oder --interactive	fragt vor dem Ãœberschreiben nach
+-u oder --update	verschiebt nur wenn Zieldatei Ã¤lter
 -v oder --verbose	zeigt Verschiebe-Fortschritt an
 
 
@@ -102,10 +102,10 @@ more ist ein Pager zum Anzeigen von (Text-)Dateien in der Kommandozeile.
 Das Programm less ist eine komfortablere Alternative, aber im Gegensatz zu more nicht auf jedem UNIX-System vorhanden.
 
 -num Zahl	Es werden "Zahl" Zeilen pro Seite angezeigt (anstatt volle Seite).
--l		Das Steuerzeichen für Seitenvorschub wird ignoriert.
+-l		Das Steuerzeichen fÃ¼r Seitenvorschub wird ignoriert.
 -f		Ausgabe wird nach Textzeilen statt Bildschrimzeilen berechnet, d.h. kein Zeilenumbruch.
--p		Seiten werden beim Weiterblättern nicht gescrollt, sondern der Bildschirm wird komplett neu aufgebaut.
--c		Seiten werden beim Weiterblättern nicht gescrollt, sondern von oben her neu Zeilenweise neu aufgebaut.
+-p		Seiten werden beim WeiterblÃ¤ttern nicht gescrollt, sondern der Bildschirm wird komplett neu aufgebaut.
+-c		Seiten werden beim WeiterblÃ¤ttern nicht gescrollt, sondern von oben her neu Zeilenweise neu aufgebaut.
 -s		Mehrere aufeinanderfolgende Leerzeilen zu einer Zusammenfassen.
 -u		Es werden keine Zeichen unterstrichen.
 +/Muster	Die Datei wird erst ab der 1. gefunden Zeichenkette "Muster" angezeigt.
@@ -114,65 +114,65 @@ Das Programm less ist eine komfortablere Alternative, aber im Gegensatz zu more 
 
 tar:
 
-Das Programm tar {en} steht für Tape archiver. Es wurde ursprünglich geschrieben, um Daten auf Bandlaufwerken zu sichern. 
+Das Programm tar {en} steht fÃ¼r Tape archiver. Es wurde ursprÃ¼nglich geschrieben, um Daten auf Bandlaufwerken zu sichern. 
 Auch heute noch ist es das beliebteste Werkzeug zum Archivieren von Daten auf Linux-Systemen.
-Der Hauptvorteil eines tar-Archivs gegenüber dem in der Windowswelt weitverbreiteten ZIP-Format ist, 
+Der Hauptvorteil eines tar-Archivs gegenÃ¼ber dem in der Windowswelt weitverbreiteten ZIP-Format ist, 
 dass die Benutzerrechte einer Datei mitgesichert und beim Entpacken wiederherstellt werden (allerdings nur, 
-wenn Quelle und Ziel die Unix-Dateirechte unterstützen).
+wenn Quelle und Ziel die Unix-Dateirechte unterstÃ¼tzen).
 
---help		Zeigt eine vollständige Übersicht über alle Optionen.
+--help		Zeigt eine vollstÃ¤ndige Ãœbersicht Ã¼ber alle Optionen.
 --version	Gibt die installierte Version von tar aus.
 -c		Ein neues Archiv erzeugen.
 -d		Dateien im Archiv und im Dateisystem miteinander vergleichen.
--f		Archiv in angegebene Datei schreiben. / Daten aus angegebener Datei lesen. Diese Option muss die letzte sein, da die nachfolgende Zeichen als Datei interpretiert werden. Z.B. würde -cfv zu einer Fehlermeldung führen. Korrekt wäre -vcf.
--j		Archiv zusätzlich mit bzip2 (de)komprimieren.
--J		Archiv zusätzlich mit xz (de)komprimieren.
--k		Das Überschreiben existierender Dateien beim Extrahieren aus einem Archiv verhindern.
+-f		Archiv in angegebene Datei schreiben. / Daten aus angegebener Datei lesen. Diese Option muss die letzte sein, da die nachfolgende Zeichen als Datei interpretiert werden. Z.B. wÃ¼rde -cfv zu einer Fehlermeldung fÃ¼hren. Korrekt wÃ¤re -vcf.
+-j		Archiv zusÃ¤tzlich mit bzip2 (de)komprimieren.
+-J		Archiv zusÃ¤tzlich mit xz (de)komprimieren.
+-k		Das Ãœberschreiben existierender Dateien beim Extrahieren aus einem Archiv verhindern.
 -p		Zugriffsrechte beim Extrahieren erhalten.
--r		Dateien an ein bestehendes Archiv anhängen.
+-r		Dateien an ein bestehendes Archiv anhÃ¤ngen.
 -t		Inhalt eines Archivs anzeigen.
--u		Nur Dateien anhängen, die jünger sind als ihre Archiv-Version.
--v		Ausführliche Ausgabe aktivieren. Hierbei ist zu beachten, dass man dies möglichst an den Anfang des Befehls anhängt, wenn mehrere Optionen kombiniert werden. Z.B. würde -cfv zu einer Fehlermeldung führen. Korrekt wäre -vcf.
--w		Jede Aktion bestätigen.
+-u		Nur Dateien anhÃ¤ngen, die jÃ¼nger sind als ihre Archiv-Version.
+-v		AusfÃ¼hrliche Ausgabe aktivieren. Hierbei ist zu beachten, dass man dies mÃ¶glichst an den Anfang des Befehls anhÃ¤ngt, wenn mehrere Optionen kombiniert werden. Z.B. wÃ¼rde -cfv zu einer Fehlermeldung fÃ¼hren. Korrekt wÃ¤re -vcf.
+-w		Jede Aktion bestÃ¤tigen.
 -x		Dateien aus einem Archiv extrahieren.
--z		Archiv zusätzlich mit gzip (de)komprimieren.
--Z		Archiv zusätzlich mit compress (de)komprimieren.
--A		Inhalt eines bestehenden Archivs an ein anderes Archiv anhängen.
+-z		Archiv zusÃ¤tzlich mit gzip (de)komprimieren.
+-Z		Archiv zusÃ¤tzlich mit compress (de)komprimieren.
+-A		Inhalt eines bestehenden Archivs an ein anderes Archiv anhÃ¤ngen.
 -C		Wechselt in das angegebene Verzeichnis. Das Archiv wird dann dort entpackt.
 -M		Mehrteiliges Archiv anlegen/anzeigen/extrahieren.
 -L		Medium wechseln, wenn ZAHL KBytes geschrieben sind.
--W		Archiv nach dem Schreiben prüfen.
+-W		Archiv nach dem Schreiben prÃ¼fen.
 
 
 gzip:
 
-gzip {en} steht für GNU zip und ist unter Linux - neben bzip2 - wohl die am häufigsten genutzte Komprimierungsmethode. 
+gzip {en} steht fÃ¼r GNU zip und ist unter Linux - neben bzip2 - wohl die am hÃ¤ufigsten genutzte Komprimierungsmethode. 
 Mit gzip gepackte Dateien haben in der Regel die Dateiendung .gz. Zum Entpacken von gzip-Archiven kann der Befehl gunzip eingesetzt werden. 
 gunzip kennt die gleichen Optionen wie gzip und ist im Prinzip nichts anderes als der Aufruf von gzip mit der Option zum Entpacken (Details siehe unten). 
 Daher wird im Folgenden nur gzip behandelt.
 
 -1 ... -9	Gibt den Komprimierungsgrad an. 1 ist die schlechteste aber schnellste Komprimierung, 9 die beste aber langsamste Komprimierung. Voreinstellung ist 5.
 -r		Dateien werden einzeln rekursiv in allen Unterverzeichnissen komprimiert bzw. dekomprimiert.
--f		Eventuell vorhandene Dateien werden ohne Rückfrage überschrieben.
+-f		Eventuell vorhandene Dateien werden ohne RÃ¼ckfrage Ã¼berschrieben.
 -d		Decompress, d.h. die angegebene Datei (Archiv) wird in das aktuelle Verzeichnis entpackt.
--k		Die Originaldatei wird beibehalten und nicht gelöscht.
--l		Gibt Details zum Archiv aus, wie z.B. Kompressionsrate, Größe der unkomprimierten Datei etc.
+-k		Die Originaldatei wird beibehalten und nicht gelÃ¶scht.
+-l		Gibt Details zum Archiv aus, wie z.B. Kompressionsrate, GrÃ¶ÃŸe der unkomprimierten Datei etc.
 -c		Schreibt auf die Standardausgabe (also in der Regel den Bildschirm).
--q		Unterdrückt alle (Warn-) Meldungen. Dies ist hilfreich, wenn eine größere Datei im Hintergrund ge- bzw. entpackt werden soll.
--t		Testet die Integrität des Archivs.
--h		Zeigt eine vollständige Übersicht über alle Optionen.
+-q		UnterdrÃ¼ckt alle (Warn-) Meldungen. Dies ist hilfreich, wenn eine grÃ¶ÃŸere Datei im Hintergrund ge- bzw. entpackt werden soll.
+-t		Testet die IntegritÃ¤t des Archivs.
+-h		Zeigt eine vollstÃ¤ndige Ãœbersicht Ã¼ber alle Optionen.
 
 
 top:
 
-Der Befehl top zeigt eine dynamische Übersicht der auf dem System laufenden Prozesse und die Systemressourcen an. 
-Das Kommandozeilenprogramm ist ein Klassiker, wenn man einen schnellen Überblick benötigt, womit das System gerade beschäftigt ist.
+Der Befehl top zeigt eine dynamische Ãœbersicht der auf dem System laufenden Prozesse und die Systemressourcen an. 
+Das Kommandozeilenprogramm ist ein Klassiker, wenn man einen schnellen Ãœberblick benÃ¶tigt, womit das System gerade beschÃ¤ftigt ist.
 
 -b				Startet top im "Batch"-Modus. Tastatureingaben werden ignoriert und die Ausgabe ist frei von Terminal-Kontroll-Sequenzen. Praktisch um die Ausgabe von top z.B. in eine Datei zu leiten
--c				Zeigt das vollständige Kommando inklusive Pfadangaben an
+-c				Zeigt das vollstÃ¤ndige Kommando inklusive Pfadangaben an
 -d ss.tt			Wiederholrate in Sekunden * 1/100 Sekunden
 -i				Prozesse, die den Status "idle" besitzen, die also ruhen, werden nicht angezeigt
--n ANZAHL			Beschränkt die Ausgabe auf die angegebene Zahl von Iterationen.
+-n ANZAHL			BeschrÃ¤nkt die Ausgabe auf die angegebene Zahl von Iterationen.
 -u BENUTZERNAME bzw. UID	Zeigt nur die Prozesse des entsprechenden Benutzers an
 -p PID1 -p PID2 ...		Zeigt nur Prozesse mit den angegeben Prozess-IDs an
 -S				Zeigt die absolute Zeit an, seit der Prozess gestartet wurde
@@ -202,13 +202,13 @@ Sucht und findet Dateien (Dateien, Ordern, etc) die "testString" im Namen haben.
 
 Aufgabe 2:
 
-Bei der Angabe von Dateinamen können eine Reihe von Meta-Zeichen verwendet werden:
+Bei der Angabe von Dateinamen kÃ¶nnen eine Reihe von Meta-Zeichen verwendet werden:
 
  *	Eine Folge von keinem, einem oder mehreren Zeichen
  ?	Ein einzelnes Zeichen
- [abc]	Übereinstimmung mit einem beliebigen Zeichen in der Klammer
- [a-q]	Übereinstimmung mit einem beliebigen Zeichen aus dem angegebenen Bereich
- [!abc]	Übereinstimmung mit einem beliebigen Zeichen, das nicht in der Klammer ist
+ [abc]	Ãœbereinstimmung mit einem beliebigen Zeichen in der Klammer
+ [a-q]	Ãœbereinstimmung mit einem beliebigen Zeichen aus dem angegebenen Bereich
+ [!abc]	Ãœbereinstimmung mit einem beliebigen Zeichen, das nicht in der Klammer ist
  ~	Home-Verzeichnis des aktuellen Benutzers
  ~name	Home-Verzeichnis des Benutzers name
  ~+	Aktuelles Verzeichnis
@@ -220,7 +220,15 @@ ls :
 1file1  2file1  3file1  ?file1  *file1  foo_file1
 
 rm `ls |  head -1`
-1file1 gelöscht
+1file1 gelÃ¶scht
+
+Aufgabe 3:
+
+tar -x-z-f archiv.tar.gz -C / oder fÃ¼r in ein verzeichnis /Data/
+rm -r /Data
+cd Data/.../dir1
+
+Alle Daten sind verloren(Sind nicht wiederherstellbar)
 
 
 
