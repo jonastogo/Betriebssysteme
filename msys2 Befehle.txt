@@ -1,0 +1,2 @@
+pacman -Syuu 2x
+pacman -S man
