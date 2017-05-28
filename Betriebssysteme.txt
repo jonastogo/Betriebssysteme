@@ -1,0 +1,28 @@
+Erstellt den MySql-Docker:
+	docker run --name MySQL_Server -e MYSQL_ROOT_PASSWORD=********** -d mysql/mysql-server:latest
+
+Connect to MySql-Docker:
+	docker exec -it MySQL_Server mysql -uroot -p
+
+
+Erstellt den PHP-Docker:
+	docker run --name PHP --link MYSQL_DB:db -d -p 8765:80 phpmyadmin/phpmyadmin
+
+phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin4444
+    environment:
+     - PMA_ARBITRARY=1
+    restart: always
+    links:
+     - MYSQL_DB
+    ports:
+     - 4444:80
+    volumes:
+     - /sessions
+
+läuft nicht weil MYSQL_DB nicht gefunden wird 
+
+
+170 440 145
+9814
