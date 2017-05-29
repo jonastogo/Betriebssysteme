@@ -14,6 +14,7 @@ delete() {
 
 	if [ -e $1 ]; then
     echo "$DIRNAME $1" >> $HOME/.trashBin/.dir
+    echo "$1 deleted to $DIRNAME"
 		mv $1 $HOME/.trashBin/$DIRNAME
 	fi
 }

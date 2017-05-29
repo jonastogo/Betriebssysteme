@@ -1,0 +1,15 @@
+Image
+ein Image ist bei Docker eine portable Abbildung eines Containers.
+
+Container
+ein Container ist ein lauffähiges, virtuelles Betriebssystem.
+
+Dockerfile
+eine Textdatei, die Befehle enthält, um ein Image den eigenen Anforderungen anzupassen.
+
+Architektur
+Ein Docker-Container umfasst nur die eigentliche Applikation sowie die dazugehörigen Abhängigkeiten. 
+Dieser wird als isolierter Prozess auf dem Betriebssystem des Hosts ausgeführt.
+
+Docker Hub
+ein Online-Dienst, der eine Registry für Docker-Images und Repositorys beinhaltet
