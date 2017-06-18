@@ -1,0 +1,7 @@
+Wenn Sie eine Datei öffnen, verweist ein Indikator für die Dateiposition (genauer gesagt der Schreib-/Lesezeiger) auf den Anfang der Datei, 
+genauer gesagt auf das erste Zeichen mit der Position 0. 
+Sie können sich dies gern wie bei einem gewöhnlichen char-Array vorstellen, wo jedes Zeichen an einer bestimmten Position ist. 
+Nur dann, wenn Sie eine Datei im Anhängemodus (a bzw. a+) öffnen, verweist der Schreib-/Lesezeiger auf das Ende der Datei. 
+Mit jeder Lese- oder Schreiboperation erhöht sich auch der Schreib-/Lesezeiger um die Anzahl der übertragenen Zeichen. 
+Wenn Sie diesen sequenziellen Arbeitsfluss von Dateien ändern wollen, müssen Sie Funktionen für einen wahlfreien Dateizugriff verwenden. 
+Hierfür stehen die Funktionen fseek(), rewind() und fsetpos() zur Verfügung.
